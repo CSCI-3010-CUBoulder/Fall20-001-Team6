@@ -115,4 +115,5 @@ std::vector<int> SubtractN(std::vector<int>, int n);
 std::vector<double> SubtractN(std::vector<double>, double n);
 
 int main(){
+}
   
