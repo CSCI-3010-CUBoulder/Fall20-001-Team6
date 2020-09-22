@@ -1,6 +1,6 @@
 language: cpp 
 
 script: 
-  - g++ -std=c++11 functions_to_implement.cpp 
+  - make
   - ./a.out
 
