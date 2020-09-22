@@ -1,5 +1,5 @@
-
 /* String functions section */
+
 // Splits a single string on separator into a vector of strings
 std::vector<std::string> Split(std::string whole, std::string separator);
 
