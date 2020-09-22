@@ -2,5 +2,5 @@ language: cpp
 
 script: 
   - make
-  - ./a.out
+  - ./test
 
