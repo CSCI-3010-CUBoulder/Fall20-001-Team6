@@ -1,3 +1,7 @@
+#include <iostream> 
+#include <vector> 
+#include <string> 
+
 /* String functions section */
 std:: cout << "Vananh Le" << std:: endl;
 // Splits a single string on separator into a vector of strings
