@@ -1,5 +1,2 @@
-CXX = g++
-CXXFLAGS	= -std=c++17 -Wall
-
-test:
-	test.cpp
+all:
+	g++ -std=c++11 test.cpp
