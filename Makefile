@@ -1,2 +1,9 @@
-all:
-	g++ -std=c++11 test.cpp
+CXX = g++
+CXXFLAGS	= -std=c++17 -Wall
+
+all: test
+
+clean:
+	rm test
+
+test: test.cpp
