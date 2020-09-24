@@ -27,10 +27,32 @@ std::vector<int> MultiplesFilter(std::vector<int>, int divides_by);
 std::vector<bool> EvenMask(std::vector<int>);
 
 // returns a vector with true for odd numbers and false for even numbers
-std::vector<bool> OddMask(std::vector<int>);
+std::vector<bool> OddMask(std::vector<int> arr)
+{
+    std:: vector<bool> oddtest;
+    for(int i = 0; i < arr.size(); i++)
+    {
+        if(arr[i]%2 != 0)
+        {
+            oddtest.push_back(true);
+        }
+        else{
+            oddtest.push_back(false);
+        }
+    }
+    return oddtest;
+}
 
 // Sums all numbers in a vector and returns the resulting value
-int Sum(std::vector<int> nums);
+int Sum(std::vector<int> nums)
+{
+    int num =0;
+    for(int i =0; i < nums.size(); i++)
+    {
+        num += nums[i];
+    }
+    return num;
+}
 
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums);
