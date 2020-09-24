@@ -24,7 +24,7 @@ TEST_CASE("Checking OddMask", "[addN]")
     //this is a even vector
     std:: vector <int> oddv{2,6,8,10};
     //this is an odd vector
-    std:: vector<int> oddv2{1,,3,7,9};
+    std:: vector<int> oddv2{1,3,7,9};
 
     SECTION("This vector contains all even numbers")
     {
