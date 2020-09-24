@@ -1,6 +1,7 @@
 #include <iostream> 
 #include <vector> 
-#include <string> 
+#include <string>
+#include <bits/stdc++.h>
 
 /* String functions section */
 //std:: cout << "Vananh Le" << std:: endl;
@@ -40,10 +41,17 @@ int Sum(std::vector<int> nums);
 int Product(std::vector<int> nums);
 
 // Adds an integer n to each element of a given vector
-std::vector<int> VectorPlusN(std::vector<int> v, int n);
+std::vector<int> VectorPlusN(std::vector<int> v, int n)
+{
+    std::vector<int> result;
+    std::for_each(v.begin(), v.end(), [&](double x){
+        result.push_back(x+n);
+    });
+    return result;
+}
 
 // Multiples an integer n with each element of a given vector
-std::vector<int> VectorTimesN(std::vector<int> v, int n);
+//std::vector<int> VectorTimesN(std::vector<int> v, int n);
 
 // takes in two integers and returns a vector of size n with
 // values n*1, n*2, n*3... up to n*m
@@ -90,7 +98,14 @@ double Product(std::vector<double> nums);
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
 
 // Multiples an double n with each element of a given vector
-std::vector<double> VectorTimesN(std::vector<double> v, double n);
+std::vector<double> VectorTimesN(std::vector<double> v, double n)
+{
+    std::vector<double> result;
+    std::for_each(v.begin(), v.end(), [&](double x){
+        result.push_back(x*n);
+    });
+    return result;
+}
 
 // takes in two doubles and returns a vector of size n with
 // values n*1, n*2, n*3... up to n*m
