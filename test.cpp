@@ -29,7 +29,7 @@ TEST_CASE("Checking OddMask", "[addN]")
     SECTION("This vector contains all even numbers")
     {
         std:: vector<bool>falsev = OddMask(oddv);
-        REQUIRE(falsev.size() == oddv.size())
+        REQUIRE(falsev.size() == oddv.size());
 
         for(int i =0; i < falsev.size(); i++)
         {
@@ -40,7 +40,7 @@ TEST_CASE("Checking OddMask", "[addN]")
     SECTION("This vector containing all odd numbers")
     {
         std:: vector<bool>truev = OddMask(oddv2);
-        REQUIRE(truev.size() == oddv.size())
+        REQUIRE(truev.size() == oddv.size());
 
         for(int i =0; i < truev.size(); i++)
         {
